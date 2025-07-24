@@ -84,7 +84,6 @@
         </div>
 
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-12 px-3 lg:px-0">
-          <!-- Card -->
           <div class="overflow-hidden flex flex-col items-center">
             <img
               src="assets/sample-flower-image.png"
@@ -102,7 +101,7 @@
               20 USD
             </p>
             <button
-              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white"
+              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white cursor-pointer"
             >
               ADD TO CART
             </button>
@@ -124,7 +123,7 @@
               20 USD
             </p>
             <button
-              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white"
+              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white cursor-pointer"
             >
               ADD TO CART
             </button>
@@ -146,7 +145,7 @@
               20 USD
             </p>
             <button
-              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white"
+              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white cursor-pointer"
             >
               ADD TO CART
             </button>
@@ -168,7 +167,7 @@
               20 USD
             </p>
             <button
-              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white"
+              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white cursor-pointer"
             >
               ADD TO CART
             </button>
@@ -190,7 +189,7 @@
               20 USD
             </p>
             <button
-              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white"
+              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white cursor-pointer"
             >
               ADD TO CART
             </button>
@@ -212,7 +211,7 @@
               20 USD
             </p>
             <button
-              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white"
+              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white cursor-pointer"
             >
               ADD TO CART
             </button>
@@ -234,7 +233,7 @@
               20 USD
             </p>
             <button
-              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white"
+              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white cursor-pointer"
             >
               ADD TO CART
             </button>
@@ -256,7 +255,7 @@
               20 USD
             </p>
             <button
-              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white"
+              class="bg-[#E95A08] w-full h-[50px] font-inter font-semibold text-white cursor-pointer"
             >
               ADD TO CART
             </button>
@@ -270,7 +269,7 @@
           <div class="relative">
             <img src="assets/flower-store.png" alt="" />
             <img
-              class="hidden lg:block w-[286px] h-[286px] absolute -right-24 bottom-110"
+              class="hidden lg:block w-[286px] h-[286px] absolute -right-24 bottom-110 animate-spin [animation-duration:10s]"
               src="assets/trusted-badge.png"
               alt=""
             />
@@ -302,7 +301,7 @@
       </section>
 
       <!-- Latest Deals -->
-      <div class="text-center mt-28">
+      <div class="text-center mt-28 px-3">
         <h3 class="font-bold font-noto text-5xl pb-4">
           <span class="text-[#E95A08]">Latest</span> Deals
         </h3>
@@ -367,25 +366,49 @@
       </section>
 
       <!-- Join Section -->
-      <section>
+      <!-- <section>
         <div
-          class="bg-[url(assets/news-letter-bg.png)] h-[533px] bg-cover mt-28 flex flex-col items-center justify-center"
+          class="bg-[url('assets/news-letter-bg.png')] h-[533px] bg-cover bg-center mt-28 flex items-center justify-center px-4"
         >
-          <div class="lg:w-[830px] text-center">
+          <div class="w-full max-w-[830px] text-center">
             <h2
-              class="text-2xl lg:text-5xl font-noto font-bold text-white text-center mb-5"
+              class="text-2xl lg:text-5xl font-noto font-bold text-white mb-6"
             >
-              Join the Colorful Bunch
+              Join the colorful Bunch
             </h2>
-            <form class="w-full flex" action="">
+            <form class="flex w-full">
               <input
-                class="bg-white w-full font-inter pl-4"
+                type="email"
+                placeholder="Write email"
+                class="flex-grow bg-white font-inter pl-4 py-4 outline-none"
+              />
+              <button class="bg-[#E95A08] text-white font-bold px-8 py-4">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="mx-auto mt-24 mb-4 lg:mb-8">
+        <div
+          class="bg-[url(assets/news-letter-bg.png)] min-h-[276px] lg:min-h-[533px] bg-no-repeat bg-cover flex items-center"
+        >
+          <div class="text-white lg:w-[830px] mx-6 lg:mx-auto">
+            <h3 class="text-2xl lg:text-5xl mb-5 text-center font-noto">
+              Join the colorful Bunch
+            </h3>
+            <form class="flex" action="">
+              <input
+                class="bg-white text-[#000000] w-full pl-5"
                 type="email"
                 name=""
                 id=""
-                placeholder="Write email"
+                placeholder="Write Email"
               />
-              <button class="bg-[#E95A08] text-white font-semibold px-12 py-5">
+              <button
+                class="bg-[#E95A08] font-inter font-semibold text-[16px] py-3 px-5 lg:px-10"
+              >
                 Subscribe
               </button>
             </form>
@@ -436,10 +459,15 @@
           </ul>
         </div>
         <div class="flex h-[36px] gap-6">
-          <img src="assets/icon-linkedin.png" alt="" />
-          <img src="assets/icon-twitter.png" alt="" />
-          <img src="assets/icon-facebook.png" alt="" />
-          <img src="assets/icon-youtube.png" alt="" />
+          <a href=""><img src="assets/icon-linkedin.png" alt="" /></a>
+          <a href=""
+            ><img
+              class="w-[36px] h-[36px]"
+              src="assets/icon-twitter.png"
+              alt=""
+          /></a>
+          <a href=""><img src="assets/icon-facebook.png" alt="" /></a>
+          <a href=""><img src="assets/icon-youtube.png" alt="" /></a>
         </div>
       </div>
     </footer>
